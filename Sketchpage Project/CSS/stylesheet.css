@@ -1,0 +1,188 @@
+html {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(201, 201, 201);
+}
+
+canvas {
+    position: absolute;
+    top: 64px;
+    left: 0px;
+    margin: 0px;
+    padding: 0px;
+    z-index: -1;
+    background-color: rgb(255, 255, 255);
+    transition: 0.3s;
+    cursor: crosshair;
+}
+
+.topnav {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: rgb(49, 49, 49);
+    color: rgb(224, 224, 224);
+}
+
+.topnav .sidenavButton {
+    float: left;
+    display: block;
+    cursor: pointer;
+    padding: 12px 12px;
+    background-color: rgb(49, 49, 49);
+    transition: 0.2s;
+}
+
+.topnav .sidenavButton:hover {
+    background-color: rgb(27, 27, 27);
+    transition: 0.2s;
+}
+ 
+.topnav .bar1, .bar2, .bar3 {
+    width: 30px;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    margin: 6px 0px;
+    transition: 0.4s;
+}
+ 
+.topnav .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+ 
+.topnav .change .bar2 {
+    opacity: 0;
+}
+ 
+.topnav .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+.topnav .functions {
+    float: left;
+    display: flex;
+    height: 100%;
+}
+
+.topnav .functions a {
+    font-size: 22px;
+    padding: 14px 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.topnav .functions a:hover {
+    background-color: rgb(27, 27, 27);
+    transition: 0.3s;
+}
+
+.sidenav {
+    position: absolute;
+    width: 248px;
+    left: -248px;
+    top: 64px;
+    font-size: 18px;
+    background-color: rgb(212, 212, 212);
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.sidenav h1 {
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(24, 24, 24);
+    text-align: center;
+}
+
+.sidenav .sidenavColorpicker {
+    margin-top: 12px;
+    margin-left: 10px;
+}
+
+.sidenav .sidenavWidthpicker {
+    margin-top: 12px;
+    margin-left: 10px;
+}
+
+.sidenav .sidenavCappicker {
+    margin-top: 12px;
+    margin-left: 10px;
+}
+
+.sidenav .sidenavOpacitypicker {
+    margin-top: 12px;
+    margin-left: 10px;
+}
+
+.sidenav .sidenavEraserpicker {
+    margin-top: 12px;
+    margin-left: 10px;
+}
+
+.upnav {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    top: -256px;
+    width: 512px;
+    height: 256px;
+    border-radius: 15px;
+    background-color: rgb(242, 242, 242);
+    -webkit-box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.3);
+    opacity: 0.0;
+    transition: 0.3s;
+}
+
+.upnav h1 {
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    margin-top: 14px;
+}
+
+.upnav .separator {
+    position: absolute;
+    height: 1px;
+    left: 0px;
+    right: 0px;
+    margin-top: -6px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 456px;
+    background-color: rgb(0, 0, 0);
+}
+
+.upnav .imagePicker {
+    margin-top: 90px;
+}
+
+.upnav a {
+    float: right;
+    background-color: rgb(207, 207, 207);
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    font-weight: bold;
+    padding: 6px 8px;
+    margin-top: 65px;
+    margin-right: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.upnav a:hover {
+    background-color: rgb(145, 145, 145);
+}

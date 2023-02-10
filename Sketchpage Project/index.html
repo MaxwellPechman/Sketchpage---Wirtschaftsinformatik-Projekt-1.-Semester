@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="EN">
+    <head>
+        <title>Sketchpage</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="CSS/stylesheet.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="contentID">
+            <div class="topnav" id="topnavID">
+                <div class="sidenavButton" id="sidenavButtonConID" onclick="toggleSidenav(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                <div class="functions" id="functionsConID">
+                    <a onclick="clearCanvas()">CLEAR</a>
+                    <a onclick="downloadCanvas()">DOWNLOAD</a>
+                    <a onclick="toggleUpnav(this)">UPLOAD</a>
+                </div>
+            </div>
+            <div class="sidenav" id="sidenavID">
+                <div id="pencilOptionsID">
+                    <div>
+                        <h1>Pencil Options:</h1>
+                    </div>
+                    <div class="sidenavColorpicker" id="sidenavColorpickerID">
+                        <form>
+                            <label for="colorpickerID">Color:</label>
+                            <input type="color" value="#000000" id="colorpickerID" style="margin-left:12px;">
+                        </form>
+                    </div>
+                    <div class="sidenavWidthpicker" id="sidenavWidthpickerID">
+                        <form>
+                            <label for="widthpickerID">Width:</label>
+                            <input type="range" min="1" max="100" value="1" id="widthpickerID" style="margin-left:12px;">
+                        </form>
+                    </div>
+                    <div class="sidenavOpacitypicker" id="sidenavOpacitypickerID">
+                        <form>
+                            <label for="opacitypickerID">Alpha:</label>
+                            <input type="range" min="0" max="10" value="10" id="opacitypickerID" style="margin-left:12px;">
+                        </form>
+                    </div>
+                    <div class="sidenavCappicker" id="sidenavCappickerID" >
+                        <form>
+                            <label for="cap">Cap:</label>
+                            <select name="cap" id="cappickerID" style="margin-left:20px;">
+                                <option value="round">Round</option>
+                                <option value="butt">Round-End</option>
+                                <option value="square">Square</option>
+                            </select>
+                        </form>
+                    </div>
+                    <div class="sidenavEraserpicker" id="sidenavEraserID">
+                        <form>
+                            <label for="eraserpickerID">Eraser:</label>
+                            <input type="checkbox" id="eraserpickerID" style="margin-left:12px;">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div id="uploadConID">
+                <div class="upnav" id="upnavID">
+                    <div>
+                        <h1>Upload Navigator</h1>
+                    </div>
+                    <div class="separator"></div>
+                    <div class="imagePicker" id="upnavImagepickerID">
+                        <form>
+                            <input type="file" id="imagepickerID">
+                        </form>
+                    </div>
+                    <div>
+                        <a onclick="toggleUpnav(this)" style="margin-right:32px;">Apply</a>
+                        <a onclick="cancelUpnav()">Cancel</a>
+                    </div>
+                </div>
+            </div>
+            <div id="canvasConID">
+                <canvas id="canvasID"></canvas>
+            </div>
+        </div>
+        <script src="JavaScript/navHandler.js"></script>
+        <script src="JavaScript/canvasHandler.js"></script>
+    </body>
+</html>
